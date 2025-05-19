@@ -25,7 +25,7 @@
 			</header>
 
 			<main>
-				<div>
+				<div class="current_weather">
 					<h1 class="weather_city" id="weather-city"></h1>
 					<div class="weather_temperature">
 						<p class="weather_temperature_icon">☀️</p>
@@ -34,11 +34,18 @@
 							id="weather-temperature-value"></span
 						><span class="weather_temperature_unit">°C</span>
 					</div>
-					<p class="weather_time">Monday 11:00</p>
+					<div class="weather_time">
+						<span id="weather-time"></span>
+					</div>
+					<div class="weather_information">
+						<p>
+							<span id="weather-description"></span> | humidity:
+							<span id="weather-humidity">57</span>% | wind:
+							<span id="weather-wind">8</span> km/h
+						</p>
+					</div>
 				</div>
-				<div>
-					<p>Sunny | Humidity: 57% | Wind: 8 km/h</p>
-				</div>
+
 				<hr />
 			</main>
 
