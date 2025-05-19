@@ -4,44 +4,59 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Weather Search</title>
+		<!-- Linking CSS -->
+		<link rel="stylesheet" href="/assets/css/styles.css" />
 	</head>
 
 	<body>
-		<header>
-			<input type="search" placeholder="Enter a city..." required />
-			<input type="submit" value="search" />
-		</header>
+		<div class="weather_container">
+			<header>
+				<form class="search_form">
+					<input
+						type="search"
+						placeholder="Enter a city..."
+						required
+						class="search_form_input" />
+					<input type="submit" value="search" class="search_form_button" />
+				</form>
+			</header>
 
-		<main>
-			<div>
-				<h1>Amsterdam</h1>
-				<p>☀️17°C</p>
-				<p>Monday 11:00</p>
-			</div>
-			<div>
-				<p>Sunny | Humidity: 57% | Wind: 8 km/h</p>
-			</div>
-		</main>
+			<main>
+				<div>
+					<h1 class="weather_city">Amsterdam</h1>
+					<div class="weather_temperature">
+						<p class="weather_temperature_icon">☀️</p>
+						<span class="weather_temperature_value">17</span
+						><span class="weather_temperature_unit">°C</span>
+					</div>
+					<p class="weather_time">Monday 11:00</p>
+				</div>
+				<div>
+					<p>Sunny | Humidity: 57% | Wind: 8 km/h</p>
+				</div>
+				<hr />
+			</main>
 
-		<footer>
-			<p>
-				This project was coded by
-				<a href="https://github.com/KayleighvdH" target="_blank">
-					Kayleigh van der Heijden</a
-				>
-				, is open-sourced on
-				<a
-					href="https://github.com/KayleighvdH/shecodes-weather-search"
-					target="_blank">
-					Github</a
-				>
-				and hosted on
-				<a
-					href="https://kayleighvdh-weathersearch.netlify.app/"
-					target="_blank">
-					Netlify</a
-				>.
-			</p>
-		</footer>
+			<footer>
+				<p>
+					This project was coded by
+					<a href="https://github.com/KayleighvdH" target="_blank">
+						Kayleigh van der Heijden</a
+					>
+					, is open-sourced on
+					<a
+						href="https://github.com/KayleighvdH/shecodes-weather-search"
+						target="_blank">
+						Github</a
+					>
+					and hosted on
+					<a
+						href="https://kayleighvdh-weathersearch.netlify.app/"
+						target="_blank">
+						Netlify</a
+					>.
+				</p>
+			</footer>
+		</div>
 	</body>
 </html>

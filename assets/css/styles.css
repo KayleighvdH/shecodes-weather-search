@@ -1,0 +1,98 @@
+/* Import Google Fonts */
+@font-face {
+	font-family: "PoppinsLight";
+	src: url(/assets/fonts/Poppins-Light.ttf);
+}
+@font-face {
+	font-family: "PoppinsMedium";
+	src: url(/assets/fonts/Poppins-Medium.ttf);
+}
+
+/* Styling */
+body {
+	background-color: #f7f7f7;
+	color: #f7f7f7;
+	font-family: "PoppinsLight", sans-serif;
+	font-size: 15px;
+}
+
+span {
+	padding: 0px;
+}
+
+a {
+	color: #f7f7f7;
+}
+
+.weather_container {
+	background: radial-gradient(
+		circle at 0.7% 2.7%,
+		rgb(237, 220, 140) 0%,
+		rgb(241, 121, 121) 90%
+	);
+	border-radius: 15px;
+	box-shadow: 0 30px 50px rgba(122, 119, 121, 0.344);
+	margin: 30px auto;
+	max-width: 80%;
+	padding: 30px;
+}
+
+.search_form_input {
+	background-color: #f7f7f7;
+	border: none;
+	border-radius: 12px;
+	font-family: "PoppinsLight", sans-serif;
+	font-size: 13px;
+	margin-right: 8px;
+	padding: 6px;
+	width: 80%;
+}
+
+.search_form_button {
+	background-color: #f7f7f7;
+	border: none;
+	border-radius: 12px;
+	color: #f1857b;
+	font-family: "PoppinsMedium", sans-serif;
+	font-size: 13px;
+	padding: 6px;
+	transition: all 200mx ease-in-out;
+	width: 15%;
+}
+.search_form_button:hover {
+	cursor: pointer;
+	background-color: #f7f7f7;
+}
+
+main {
+	text-align: center;
+}
+
+.weather_city {
+	font-family: "PoppinsMedium";
+	font-size: 40px;
+	margin-bottom: 5px;
+}
+
+.weather_temperature {
+	font-size: 35px;
+	font-weight: 700;
+}
+
+.weather_temperature_icon {
+	margin: 6px;
+	font-size: 130px;
+}
+
+.weather_time {
+	font-size: 20px;
+}
+
+hr {
+	border: 1px solid #f7f7f7;
+}
+
+footer {
+	font-size: 12px;
+	text-align: center;
+}
