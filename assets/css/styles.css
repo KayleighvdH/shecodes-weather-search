@@ -80,8 +80,11 @@ main {
 }
 
 .weather_temperature_icon {
-	margin: 6px;
-	font-size: 130px;
+	margin: 20px auto;
+}
+
+.weather_icon {
+	height: 140px;
 }
 
 .weather_time {
