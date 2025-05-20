@@ -102,6 +102,10 @@ main {
 	margin: 30px;
 }
 
+.forecast_icon {
+	height: 40px;
+}
+
 .forecast_weather_temperatures {
 	display: flex;
 	justify-content: center;
