@@ -17,6 +17,8 @@ function refreshWeather(response) {
 	descriptionElement.innerHTML = response.data.condition.description;
 	humidityElement.innerHTML = response.data.temperature.humidity;
 	windElement.innerHTML = Math.round(windSpeed);
+
+	getForecast(response.data.city);
 }
 
 function formatDate(date) {
@@ -53,7 +55,15 @@ function searchSubmit(event) {
 	searchCity(searchInput.value);
 }
 
-function displayForecast() {
+function getForecast(city) {
+	let apiKey = "007o490fa9c43ta708a74ba7cfaf7bcb";
+	let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
+	axios.get(apiUrl).then(displayForecast);
+}
+
+function displayForecast(response) {
+	console.log(response.data);
+
 	let days = ["Tue", "Wed", "Thu", "Fri", "Sat"];
 	let forecastHtml = "";
 
@@ -61,14 +71,14 @@ function displayForecast() {
 		forecastHtml =
 			forecastHtml +
 			`
-		<div class="weather-forecast-day">
-		  <div class="weather-forecast-date">${day}</div>
-		  <div class="weather-forecast-icon">🌤️</div>
-		  <div class="weather-forecast-temperatures">
-			<div class="weather-forecast-temperature">
+		<div class="forecast_weather_day">
+		  <div class="forecast_weather_date">${day}</div>
+		  <div class="forecast_weather_icon">🌤️</div>
+		  <div class="forecast_weather_temperatures">
+			<div class="forecast_weather_temperature">
 			  <strong>15º</strong>
 			</div>
-			<div class="weather-forecast-temperature">9º</div>
+			<div class="forecast_weather_temperature">9º</div>
 		  </div>
 		</div>
 	  `;
