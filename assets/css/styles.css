@@ -92,6 +92,25 @@ main {
 	margin: 35px;
 }
 
+.devide_weather {
+	border: 1px solid #f7f7f7a7;
+}
+
+.forecast_weather {
+	display: flex;
+	justify-content: space-around;
+	margin: 30px 0px;
+}
+
+.forecast_weather_temperatures {
+	display: flex;
+	justify-content: center;
+}
+
+.forecast_weather_temperature {
+	padding: 0 6px;
+}
+
 hr {
 	border: 1px solid #f7f7f7;
 }
