@@ -93,13 +93,13 @@ main {
 }
 
 .devide_weather {
-	border: 1px solid #f7f7f7a7;
+	border: 1px dotted #f7f7f77c;
 }
 
 .forecast_weather {
 	display: flex;
 	justify-content: space-around;
-	margin: 30px 0px;
+	margin: 30px;
 }
 
 .forecast_weather_temperatures {
